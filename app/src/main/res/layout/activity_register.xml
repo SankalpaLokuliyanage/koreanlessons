@@ -7,42 +7,126 @@
     android:background="@color/mango_yellow"
     tools:context=".RegisterActivity">
 
-    <!--    Toolbar-->
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:orientation="vertical"
-        android:backgroundTint="@color/mango_yellow"
-        tools:ignore="MissingConstraints">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="24dp"
+            tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="10dp"
-            app:srcCompat="@drawable/logo" />
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/logo" />
 
-        <TextView
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="LEARN 한국말 With SANKALPA"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="30dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LEARN 한국말 With Sankalpa"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:layout_marginTop="20dp"
-            android:textSize="36sp"
-            android:textStyle="bold" />
+            android:layout_gravity="center_horizontal"
+            android:background="@color/mango_yellow"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <EditText
+                android:id="@+id/signin_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="8dp"
+                android:elevation="5dp"
+                android:hint="Email"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/signin_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background"
+                android:drawableLeft="@drawable/key"
+                android:drawablePadding="8dp"
+                android:elevation="5dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cardSignUp">
+
+                <Button
+                    android:id="@+id/signUpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:text="SIGN UP"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame" />
+
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/toLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:text="Already have an account?"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/frame" />
+
+
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
