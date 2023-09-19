@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1073988743015",
+    "project_id": "learnkoreanwithsankalpa",
+    "storage_bucket": "learnkoreanwithsankalpa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073988743015:android:55ec5ee5be454894f309c2",
+        "android_client_info": {
+          "package_name": "com.example.koreanlanguage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3G1Dntg0dF_KIIYOtR_s5L9k5b7XVuOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
