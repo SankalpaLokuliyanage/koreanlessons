@@ -55,7 +55,7 @@
 
 
             <EditText
-                android:id="@+id/signin_email"
+                android:id="@+id/signup_email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
@@ -69,7 +69,7 @@
                 android:textColorHint="@color/black" />
 
             <EditText
-                android:id="@+id/signin_password"
+                android:id="@+id/signup_password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
