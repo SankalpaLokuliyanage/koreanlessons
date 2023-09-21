@@ -12,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        app:cardCornerRadius="30dp"
+
         app:cardElevation="20dp"
-        app:cardBackgroundColor="@color/white"
+        app:cardBackgroundColor="@color/black"
         tools:ignore="MissingConstraints">
 
 
@@ -31,7 +31,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="20dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -67,7 +67,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="20dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -79,12 +79,12 @@
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:src="@drawable/words"/>
+                        android:src="@drawable/verbs"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Vocabulary"
+                        android:text="Verbs"
                         android:layout_gravity="center"
                         android:layout_marginTop="5dp"
                         android:textSize="16dp"
