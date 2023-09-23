@@ -5,13 +5,14 @@
     android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VocActivity">
+    tools:context=".VerbsActivity">
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/titletext"
-        android:text="My Vocabulary"
+        android:text="My Verbs"
         android:textColor="@color/white"
         android:textSize="25dp"
         android:gravity="center"
@@ -20,7 +21,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/vocRecycler"
+        android:id="@+id/verbRecycler"
         android:layout_below="@id/titletext"
         android:scrollbars="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -33,20 +34,15 @@
         android:layout_centerInParent="true"
         android:text="List is Empty"
         android:textColor="@color/mango_yellow"
-        android:id="@+id/empty"/>
+        android:id="@+id/emptyver"/>
 
     <Button
-        android:id="@+id/addwordacti"
+        android:id="@+id/addverb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="10dp"
-        android:text="Add Word"/>
-
-
-
-
-
+        android:text="Add Verb" />
 
 </RelativeLayout>
